@@ -20,7 +20,7 @@ st.caption(
 
 
 # Load the trained ensemble model from the saved pickle file.
-modelfile = r"C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\voting_model.pkl"
+modelfile = "voting_model.pkl"
 voting_model = pickle.load(open(modelfile, "rb"))
 
 # Caching the model for faster loading
