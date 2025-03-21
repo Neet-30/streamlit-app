@@ -3,7 +3,7 @@ import streamlit as st
 import pickle
 import numpy as np
 from PIL import Image
-import sklearn
+
 
 # Set the page configuration of the app, including the page title, icon, and layout.
 st.set_page_config(page_title="Timelytics", page_icon=":pencil:", layout="wide")
