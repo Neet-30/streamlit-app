@@ -60,7 +60,7 @@ def waitime_predictor(
 
 # Define the input parameters using Streamlit's sidebar. These parameters include the purchased day of the week, month, and year, product size, weight, geolocation state of the customer and seller, and distance.
 with st.sidebar:
-    img = Image.open(r"C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\assets\supply_chain_optimisation.jpg")
+    img = Image.open("supply_chain_optimisation.jpg")
     
     st.image(img)
     st.header("Input Parameters")
