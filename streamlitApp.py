@@ -20,7 +20,7 @@ st.caption(
 
 
 # Load the trained ensemble model from the saved pickle file.
-modelfile = ""C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\voting_model.pkl""
+modelfile = r"C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\voting_model.pkl"
 voting_model = pickle.load(open(modelfile, "rb"))
 
 # Caching the model for faster loading
@@ -59,7 +59,8 @@ def waitime_predictor(
 
 # Define the input parameters using Streamlit's sidebar. These parameters include the purchased day of the week, month, and year, product size, weight, geolocation state of the customer and seller, and distance.
 with st.sidebar:
-    img = Image.open(""C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\assets\supply_chain_optimisation.jpg"")
+    img = Image.open(r"C:\Users\neetp\OneDrive\Desktop\Intel_ai\Week 6 - Dependencies\Dependencies\assets\supply_chain_optimisation.jpg")
+    
     st.image(img)
     st.header("Input Parameters")
     purchase_dow = st.number_input(
