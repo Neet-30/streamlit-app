@@ -29,16 +29,16 @@ st.caption(
 
 
 # Define the function for the wait time predictor using the loaded model. This function takes in the input parameters and returns a predicted wait time in days.
-def waitime_predictor(
-    purchase_dow,
-    purchase_month,
-    year,
-    product_size_cm3,
-    product_weight_g,
-    geolocation_state_customer,
-    geolocation_state_seller,
-    distance,
-):
+# def waitime_predictor(
+#     purchase_dow,
+#     purchase_month,
+#     year,
+#     product_size_cm3,
+#     product_weight_g,
+#     geolocation_state_customer,
+#     geolocation_state_seller,
+#     distance,
+# ):
     prediction = voting_model.predict(
         np.array(
             [
